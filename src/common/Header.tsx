@@ -5,7 +5,7 @@ export default function Header() {
   const location = useLocation();
 
   return (
-    <div className="bg-white">
+    <div className="bg-white h-[14vh]">
       <div className="flex items-center w-[85%] m-auto py-2">
         <div>
           <Link to={"/"}>

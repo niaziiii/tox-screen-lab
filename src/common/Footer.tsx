@@ -44,7 +44,7 @@ const FooterLinksRender = ({
       <ul className={`${social ? "flex gap-6" : "flex flex-col gap-2"}`}>
         {item.map((S) =>
           social ? (
-            <Link className="text-3xs" to={S.path}>
+            <Link key={S.name} className="text-3xs" to={S.path}>
               {S.icon && <S.icon />}
             </Link>
           ) : (
