@@ -19,11 +19,13 @@ export default function Header() {
             return (
               <li
                 className={`font-semibold text-xssm ${
-                  isActive && "text-darkBlue"
-                }`}
+                  isActive ? "text-lightBlue" : "hover:text-lightBlue/80"
+                } `}
                 key={i}
               >
-                <Link to={nav.path}>{nav.name}</Link>
+                <Link to={nav.path} className="">
+                  {nav.name}
+                </Link>
               </li>
             );
           })}

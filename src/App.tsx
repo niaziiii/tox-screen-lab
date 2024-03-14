@@ -28,10 +28,14 @@ export default function App() {
 
 function Layouts() {
   return (
-    <div>
+    <div className="min-h-[100vh] flex flex-col">
       <Header />
-      <Outlet />
-      <Footer />
+      <div className="flex-1 flex min-h-[70vh]">
+        <Outlet />
+      </div>
+      <div>
+        <Footer />
+      </div>
     </div>
   );
 }

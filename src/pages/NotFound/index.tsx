@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export default function NotFound() {
   return (
-    <div className="h-screen flex items-center justify-center">
+    <div className="flex h-auto w-full items-center justify-center">
       <div className="flex flex-col ">
         <h2 className="text-4xl font-bold">Nothing to see here!</h2>
         <p className="mt-6">
