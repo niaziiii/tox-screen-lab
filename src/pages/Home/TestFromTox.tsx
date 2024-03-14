@@ -21,7 +21,7 @@ export default function TestFromTox() {
   return (
     <div className="card">
       <div className=" py-20 bg-lightGray ">
-        <div className="w-[95%] mx-auto">
+        <div className="w-[85%] mx-auto">
           <AppHeading
             title=" Test from Tox-Screen Lab"
             className="text-center"
@@ -44,10 +44,10 @@ export default function TestFromTox() {
 
 const ItemTemplate = (item: IItems) => {
   return (
-    <div className="w-[800px] my-14 mx-auto bg-white  flex items-center  xl:!mr-6 rounded-[15px] p-4">
-      <div className="pl-8">
+    <div className="w-[800px] my-14 mx-auto bg-white  flex items-center  xl:!mr-6 rounded-[15px] px-4 py-6">
+      <div className="pl-6 pr-2">
         <h3 className="text-2xs text-darkBlue font-bold">{item.title}</h3>
-        <p className="mt-4 text-xs">{item.description}</p>
+        <p className="mt-4 text-[15px]">{item.description}</p>
         <div className="mt-4">
           <AppButton
             title="Learn more"
@@ -56,11 +56,11 @@ const ItemTemplate = (item: IItems) => {
           />
         </div>
       </div>
-      <div>
+      <div className="max-h-[310px] flex items-center justify-center">
         <img
           src={item.photo}
           alt="consult"
-          className="h-[310px] rounded-[10px] w-[550px] min-w-[250px]"
+          className=" min-h-[200px] rounded-[10px] w-[550px] min-w-[200px]"
         />
       </div>
     </div>
