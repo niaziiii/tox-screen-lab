@@ -4,8 +4,9 @@ import TestsPage from "./pages/Tests";
 import NotFound from "./pages/NotFound";
 import Header from "./common/Header";
 import Footer from "./common/Footer";
-import TestDetail from "./pages/TestDetail";
+import TestDetail from "./pages/Test";
 import { APP_ROUTES } from "./utils/constant";
+import NewsArticle from "./pages/NewsArticle";
 import Signup from "./pages/Signup";
 import {
   Route,
@@ -23,7 +24,8 @@ const router = createBrowserRouter(
       <Route path={`${APP_ROUTES.tests}/:id`} element={<TestDetail />} />
       <Route path={`${APP_ROUTES.signUp}`} element={<Signup />} />
       <Route path={`${APP_ROUTES.reqForInfo}`} element={<RequestInfo />} />
-      <Route path={APP_ROUTES.notFound} element={<NotFound />} />{" "}
+      <Route path={`${APP_ROUTES.news}:id`} element={<NewsArticle />} />
+      <Route path={APP_ROUTES.notFound} element={<NotFound />} />
     </Route>
   )
 );

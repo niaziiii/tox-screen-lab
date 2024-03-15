@@ -11,10 +11,11 @@ import Stethoscope from "../assets/Stethoscope.png";
 
 export const APP_ROUTES = {
   home: "/",
-  tests: "/tests",
+  tests: "/tests/",
   signUp: "sign-up",
   reqForInfo: "/request-information",
   notFound: "*",
+  news: "/news/",
 };
 export const navItems = [
   {
@@ -104,55 +105,55 @@ export const testCardsData = [
   {
     title: "Comprehensive Health Profile - Men's",
     price: 349,
-    url: "/tests/",
+    url: APP_ROUTES.tests,
     imageSrc: TestCard,
   },
   {
     title: "Comprehensive Health Profile - Men's",
     price: 349,
-    url: "/tests/",
+    url: APP_ROUTES.tests,
     imageSrc: TestCard,
   },
   {
     title: "Comprehensive Health Profile - Men's",
     price: 349,
-    url: "/tests/",
+    url: APP_ROUTES.tests,
     imageSrc: TestCard,
   },
   {
     title: "Comprehensive Health Profile - Men's",
     price: 349,
-    url: "/tests/",
+    url: APP_ROUTES.tests,
     imageSrc: TestCard,
   },
   {
     title: "Comprehensive Health Profile - Men's",
     price: 349,
-    url: "/tests/",
+    url: APP_ROUTES.tests,
     imageSrc: TestCard,
   },
   {
     title: "Comprehensive Health Profile - Men's",
     price: 349,
-    url: "/tests/",
+    url: APP_ROUTES.tests,
     imageSrc: TestCard,
   },
   {
     title: "Comprehensive Health Profile - Men's",
     price: 349,
-    url: "/tests/",
+    url: APP_ROUTES.tests,
     imageSrc: TestCard,
   },
   {
     title: "Comprehensive Health Profile - Men's",
     price: 349,
-    url: "/tests/",
+    url: APP_ROUTES.tests,
     imageSrc: TestCard,
   },
   {
     title: "Comprehensive Health Profile - Men's",
     price: 349,
-    url: "/tests/",
+    url: APP_ROUTES.tests,
     imageSrc: TestCard,
   },
 ];
@@ -161,13 +162,13 @@ export const inPersonTestsCardData = [
   {
     title: "Comprehensive Health Profile - Men's",
     price: 349,
-    url: "/tests/",
+    url: APP_ROUTES.tests,
     imageSrc: TestCard,
   },
   {
     title: "Comprehensive Health Profile - Men's",
     price: 349,
-    url: "/tests/",
+    url: APP_ROUTES.tests,
     imageSrc: TestCard,
   },
 ];
