@@ -1,9 +1,8 @@
 import { CarouselResponsiveOption } from "primereact/carousel";
-import { classNames } from "primereact/utils";
 
 export const responsiveOptions: CarouselResponsiveOption[] = [
   {
-    breakpoint: "1400px",
+    breakpoint: "1580px",
     numVisible: 2,
     numScroll: 1,
   },
@@ -71,5 +70,59 @@ export const howItWorksData = [
     title: "Get physician support",
     description:
       "Discuss your results with an independent physician at no extra cost.",
+  },
+];
+
+export const testSuppliesData = [
+  {
+    title: "Comprehensive Health Profile - Men's",
+    price: 349,
+    url: "/tests/",
+    imageSrc: "/supplies/image-1.png",
+  },
+  {
+    title: "Comprehensive Health Profile - Men's",
+    price: 349,
+    url: "/tests/",
+    imageSrc: "/supplies/image-2.png",
+  },
+  {
+    title: "Comprehensive Health Profile - Men's",
+    price: 349,
+    url: "/tests/",
+    imageSrc: "/supplies/image-3.png",
+  },
+];
+
+export const newsData = [
+  {
+    title: "Tox Screen Labs Revolutionizes Healthcare Testing!",
+    description:
+      "In a groundbreaking leap towards personalized healthcare, Tox Screen Labs emerges as the beacon of innovation in the diagnostic ind...",
+    img: "/news/image-1.png",
+  },
+  {
+    title: "Tox Screen Labs Revolutionizes Healthcare Testing!",
+    description:
+      "In a groundbreaking leap towards personalized healthcare, Tox Screen Labs emerges as the beacon of innovation in the diagnostic ind...",
+    img: "/news/image-2.png",
+  },
+  {
+    title: "Tox Screen Labs Revolutionizes Healthcare Testing!",
+    description:
+      "In a groundbreaking leap towards personalized healthcare, Tox Screen Labs emerges as the beacon of innovation in the diagnostic ind...",
+    img: "/news/image-3.png",
+  },
+  {
+    title: "Tox Screen Labs Revolutionizes Healthcare Testing!",
+    description:
+      "In a groundbreaking leap towards personalized healthcare, Tox Screen Labs emerges as the beacon of innovation in the diagnostic ind...",
+    img: "/news/image-4.png",
+  },
+  {
+    title: "Tox Screen Labs Revolutionizes Healthcare Testing!",
+    description:
+      "In a groundbreaking leap towards personalized healthcare, Tox Screen Labs emerges as the beacon of innovation in the diagnostic ind...",
+    img: "/news/image-5.png",
   },
 ];
