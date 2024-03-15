@@ -11,6 +11,7 @@ import Header from "./common/Header";
 import Footer from "./common/Footer";
 import TestDetail from "./pages/TestDetail";
 import { APP_ROUTES } from "./utils/constant";
+import Signup from "./pages/Signup";
 
 export default function App() {
   return (
@@ -21,6 +22,7 @@ export default function App() {
             <Route index element={<HomePage />} />
             <Route path={APP_ROUTES.tests} element={<TestsPage />} />
             <Route path={`${APP_ROUTES.tests}/:id`} element={<TestDetail />} />
+            <Route path={`${APP_ROUTES.signUp}`} element={<Signup />} />
             <Route path={APP_ROUTES.notFound} element={<NotFound />} />
           </Route>
         </Routes>

@@ -12,6 +12,7 @@ import Stethoscope from "../assets/Stethoscope.png";
 export const APP_ROUTES = {
   home: "/",
   tests: "/tests",
+  signUp: "sign-up",
   notFound: "*",
 };
 export const navItems = [
@@ -41,7 +42,7 @@ export const footerItems = {
   menu: [
     {
       name: "Sign up for Testing",
-      path: "Sign-up-for-Testing",
+      path: "/sign-up",
     },
     {
       name: "Request information",
