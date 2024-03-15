@@ -32,7 +32,7 @@ export const HomePageAssest = {
     {
       name: "Sign up for Testing",
       img: "/icons/document.png",
-      path: "/",
+      path: "/sign-up",
     },
     {
       name: "Request information",

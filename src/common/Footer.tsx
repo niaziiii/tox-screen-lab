@@ -55,7 +55,10 @@ const FooterLinksRender = ({
               {S.icon && <S.icon />}
             </Link>
           ) : (
-            <li key={`${S.name} ${uniqid()}`}>
+            <li
+              className="text-center sm:text-start"
+              key={`${S.name} ${uniqid()}`}
+            >
               <Link
                 to={S.path}
                 className="hover:text-lightBlue/90 text-center sm:text-start"

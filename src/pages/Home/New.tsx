@@ -1,6 +1,6 @@
 import uniqid from "uniqid";
 import AppHeading from "../../common/Heading";
-import NewCard from "../../common/NewCard";
+import NewsCard from "../../common/NewsCard";
 import { newsData } from "./utils";
 
 function News() {
@@ -13,7 +13,7 @@ function News() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {newsData.map((news) => {
             return (
-              <NewCard
+              <NewsCard
                 key={`${news.title} ${uniqid()}`}
                 title={news.title}
                 description={news.description}

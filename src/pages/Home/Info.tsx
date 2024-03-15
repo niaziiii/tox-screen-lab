@@ -6,7 +6,7 @@ export default function Info() {
   const { infos } = HomePageAssest;
   return (
     <div className="w-[85%] m-auto py-16">
-      <div className="flex w-full justify-between">
+      <div className="flex w-full justify-center md:justify-between flex-wrap gap-x-4 gap-y-8 ">
         {infos.map((info) => {
           return (
             <div

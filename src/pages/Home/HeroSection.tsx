@@ -12,11 +12,11 @@ export default function HeroSection() {
         <div className="z-10 relative">
           <h1
             style={{ textShadow: "0px 0px 16px white" }}
-            className="text-5xl leading-[4rem] font-bold text-darkBlue w-[35rem]"
+            className="text-3xl lg:text-5xl lg:leading-[4rem] font-bold text-darkBlue lg:w-[35rem]"
           >
             Transforming Tests into Triumphs for Your Health and Well-Being!
           </h1>
-          <p className=" text-2xs w-[40rem] mt-4">
+          <p className=" text-2xs lg:w-[40rem] mt-4">
             At Tox Screen Labs, we are committed to providing cutting-edge
             testing services to empower individuals on their journey to optimal
             health.
