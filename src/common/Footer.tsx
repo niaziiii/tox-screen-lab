@@ -7,7 +7,7 @@ export default function Footer() {
   const { getInTouch, legal, menu } = footerItems;
   return (
     <div className="bg-lightGray">
-      <div className="w-[85%] justify-between m-auto py-12 flex">
+      <div className="w-[95%] md:w-[85%] justify-between m-auto py-12 flex">
         <div className="flex w-full justify-center sm:justify-between flex-wrap gap-x-4 gap-y-12 ">
           <div className="h-[180px] max-h-[180px] w-[214px] max-w-[214px] lg:self-center	">
             <img
@@ -20,6 +20,9 @@ export default function Footer() {
           <FooterLinksRender item={legal} title="Legal" />
           <FooterLinksRender item={getInTouch} title="Get in touch" social />
         </div>
+      </div>
+      <div className="bg-darkBlue py-6 text-center md:text-xl text-white">
+        Copyright © 2024 Tox-Screen Lab. All Rights Reserved
       </div>
     </div>
   );

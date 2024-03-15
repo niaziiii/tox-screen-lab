@@ -13,6 +13,7 @@ export const APP_ROUTES = {
   home: "/",
   tests: "/tests",
   signUp: "sign-up",
+  reqForInfo: "/request-information",
   notFound: "*",
 };
 export const navItems = [
@@ -46,7 +47,7 @@ export const footerItems = {
     },
     {
       name: "Request information",
-      path: "Request-information",
+      path: "/request-information",
     },
     {
       name: "How this works",
