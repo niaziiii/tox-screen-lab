@@ -9,6 +9,11 @@ import Sphygmomanometer from "../assets/Sphygmomanometer.png";
 import TestingUniform from "../assets/Testing-uniform.png";
 import Stethoscope from "../assets/Stethoscope.png";
 
+export const APP_ROUTES = {
+  home: "/",
+  tests: "/tests",
+  notFound: "*",
+};
 export const navItems = [
   {
     name: "Test",

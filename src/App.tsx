@@ -10,17 +10,18 @@ import NotFound from "./pages/NotFound";
 import Header from "./common/Header";
 import Footer from "./common/Footer";
 import TestDetail from "./pages/TestDetail";
+import { APP_ROUTES } from "./utils/constant";
 
 export default function App() {
   return (
     <Router>
       <div>
         <Routes>
-          <Route path="/" element={<Layouts />}>
+          <Route path={APP_ROUTES.home} element={<Layouts />}>
             <Route index element={<HomePage />} />
-            <Route path="/tests" element={<TestsPage />} />
-            <Route path="/tests/:id" element={<TestDetail />} />
-            <Route path="*" element={<NotFound />} />
+            <Route path={APP_ROUTES.tests} element={<TestsPage />} />
+            <Route path={`${APP_ROUTES.tests}/:id`} element={<TestDetail />} />
+            <Route path={APP_ROUTES.notFound} element={<NotFound />} />
           </Route>
         </Routes>
       </div>

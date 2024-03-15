@@ -1,3 +1,4 @@
+import uniqid from "uniqid";
 import AppHeading from "../../common/Heading";
 import NewCard from "../../common/NewCard";
 import { newsData } from "./utils";
@@ -13,6 +14,7 @@ function News() {
           {newsData.map((news) => {
             return (
               <NewCard
+                key={`${news.title} ${uniqid()}`}
                 title={news.title}
                 description={news.description}
                 img={news.img}

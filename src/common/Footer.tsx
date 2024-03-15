@@ -1,14 +1,15 @@
 import { Link } from "react-router-dom";
 import { footerItems } from "../utils/constant";
 import { IconType } from "react-icons";
+import uniqid from "uniqid";
 
 export default function Footer() {
   const { getInTouch, legal, menu } = footerItems;
   return (
     <div className="bg-lightGray">
       <div className="w-[85%] justify-between m-auto py-12 flex">
-        <div className="flex w-full justify-between">
-          <div className="h-[180px] max-h-[180px] w-[214px] max-w-[214px] self-center	">
+        <div className="flex w-full justify-center sm:justify-between flex-wrap gap-x-4 gap-y-12 ">
+          <div className="h-[180px] max-h-[180px] w-[214px] max-w-[214px] lg:self-center	">
             <img
               src="/footerLogo.png"
               alt="footer logo"
@@ -40,16 +41,25 @@ const FooterLinksRender = ({
 }: IFooterLinksRender) => {
   return (
     <div>
-      <h3 className="font-semibold text-darkBlue mb-6 text-xs">{title}</h3>
+      <h3 className="font-semibold text-darkBlue mb-6 text-xs text-center sm:text-start">
+        {title}
+      </h3>
       <ul className={`${social ? "flex gap-6" : "flex flex-col gap-2"}`}>
         {item.map((S) =>
           social ? (
-            <Link key={S.name} className="text-3xs" to={S.path}>
+            <Link
+              key={`${S.name} ${uniqid()}`}
+              className="text-3xs text-center sm:text-start"
+              to={S.path}
+            >
               {S.icon && <S.icon />}
             </Link>
           ) : (
-            <li key={S.name}>
-              <Link to={S.path} className="hover:text-lightBlue/90">
+            <li key={`${S.name} ${uniqid()}`}>
+              <Link
+                to={S.path}
+                className="hover:text-lightBlue/90 text-center sm:text-start"
+              >
                 {S.name}
               </Link>
             </li>
