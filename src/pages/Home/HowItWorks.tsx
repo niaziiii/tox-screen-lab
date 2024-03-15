@@ -17,7 +17,7 @@ export default function HowItWorks() {
       <div className="w-[85%] mx-auto">
         <AppHeading title="How it’s work?" className="text-center" />
         <div className="mt-8 w-full">
-          <div className="flex gap-4 w-full">
+          <div className="flex gap-4 w-full flex-wrap">
             {hows.map((how, i) => {
               return (
                 <button
@@ -43,7 +43,7 @@ export default function HowItWorks() {
                     <div className="mx-auto my-4 h-[50px] w-[50px] rounded-full bg-lightBlue flex items-center justify-center font-semibold text-white">
                       {i + 1}
                     </div>
-                    <h3 className="font-bold text-darkBlue text-xl text-center">
+                    <h3 className="font-bold text-darkBlue text-lg md:text-xl text-center">
                       {data.title}
                     </h3>
                     <p className=" text-center text-xs mt-2">

@@ -12,7 +12,7 @@ const AppHeading: React.FC<IHeadingProps> = ({
   className = "",
   style,
 }) => {
-  const classes = `text-4xs font-semibold text-darkBlue w-auto ${className}`;
+  const classes = `text-2xl md:text-4xs font-semibold text-darkBlue w-auto ${className}`;
   return (
     <div style={style}>
       <h1 className={classes}>{title}</h1>
