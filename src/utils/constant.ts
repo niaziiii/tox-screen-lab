@@ -2,11 +2,17 @@ import { FaFacebook } from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";
 import { TfiYoutube } from "react-icons/tfi";
 import { FaLinkedin } from "react-icons/fa6";
+import TestCard from "../assets/testcard.png";
+import TestingCup from "../assets/Testing-Cup.png";
+import Gloves from "../assets/gloves.png";
+import Sphygmomanometer from "../assets/Sphygmomanometer.png";
+import TestingUniform from "../assets/Testing-uniform.png";
+import Stethoscope from "../assets/Stethoscope.png";
 
 export const navItems = [
   {
     name: "Test",
-    path: "/test",
+    path: "/tests",
   },
   {
     name: "How this works",
@@ -86,3 +92,108 @@ export const footerItems = {
     },
   ],
 };
+
+export const testCardsData = [
+  {
+    title: "Comprehensive Health Profile - Men's",
+    price: 349,
+    url: "/tests/",
+    imageSrc: TestCard,
+  },
+  {
+    title: "Comprehensive Health Profile - Men's",
+    price: 349,
+    url: "/tests/",
+    imageSrc: TestCard,
+  },
+  {
+    title: "Comprehensive Health Profile - Men's",
+    price: 349,
+    url: "/tests/",
+    imageSrc: TestCard,
+  },
+  {
+    title: "Comprehensive Health Profile - Men's",
+    price: 349,
+    url: "/tests/",
+    imageSrc: TestCard,
+  },
+  {
+    title: "Comprehensive Health Profile - Men's",
+    price: 349,
+    url: "/tests/",
+    imageSrc: TestCard,
+  },
+  {
+    title: "Comprehensive Health Profile - Men's",
+    price: 349,
+    url: "/tests/",
+    imageSrc: TestCard,
+  },
+  {
+    title: "Comprehensive Health Profile - Men's",
+    price: 349,
+    url: "/tests/",
+    imageSrc: TestCard,
+  },
+  {
+    title: "Comprehensive Health Profile - Men's",
+    price: 349,
+    url: "/tests/",
+    imageSrc: TestCard,
+  },
+  {
+    title: "Comprehensive Health Profile - Men's",
+    price: 349,
+    url: "/tests/",
+    imageSrc: TestCard,
+  },
+];
+
+export const inPersonTestsCardData = [
+  {
+    title: "Comprehensive Health Profile - Men's",
+    price: 349,
+    url: "/tests/",
+    imageSrc: TestCard,
+  },
+  {
+    title: "Comprehensive Health Profile - Men's",
+    price: 349,
+    url: "/tests/",
+    imageSrc: TestCard,
+  },
+];
+
+export const supplyData = [
+  {
+    title: "Testing cups",
+    price: 49.0,
+    url: "#",
+    imageSrc: TestingCup,
+  },
+  {
+    title: "Medical Gloves",
+    price: 49.0,
+    url: "#",
+    imageSrc: Gloves,
+  },
+  {
+    title: "Testing Uniforms",
+    price: 49.0,
+    url: "#",
+    imageSrc: TestingUniform,
+  },
+  {
+    title: "Sphygmomanometer",
+    price: 49.0,
+    url: "#",
+    imageSrc: Sphygmomanometer,
+  },
+  {
+    title: "Stethoscope, fontal, Pinard",
+    price: 49.0,
+    url: "#",
+    imageSrc: Stethoscope,
+  },
+];

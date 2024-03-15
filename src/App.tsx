@@ -9,6 +9,7 @@ import TestsPage from "./pages/Tests";
 import NotFound from "./pages/NotFound";
 import Header from "./common/Header";
 import Footer from "./common/Footer";
+import TestDetail from "./pages/TestDetail";
 
 export default function App() {
   return (
@@ -18,6 +19,7 @@ export default function App() {
           <Route path="/" element={<Layouts />}>
             <Route index element={<HomePage />} />
             <Route path="/tests" element={<TestsPage />} />
+            <Route path="/tests/:id" element={<TestDetail />} />
             <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>
