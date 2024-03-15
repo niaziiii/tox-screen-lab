@@ -83,7 +83,7 @@ const NewsArticle = () => {
             Related Topic
           </h2>
           <div className="grid lg:grid-cols-1 md:grid-cols-2 gap-8">
-            {newsData.slice(0, 3).map((news, index) => {
+            {newsData.slice(0, 3).map((news) => {
               return (
                 <NewCard
                   key={`${news.title} ${uniqid()}`}
