@@ -1,4 +1,4 @@
-import NewCard from "../../common/NewCard";
+import NewCard from "../../common/NewsCard";
 import uniqid from "uniqid";
 import { newsData } from "../Home/utils";
 
