@@ -4,7 +4,7 @@ import FAQ from "../../common/FAQ";
 const TestDetail = () => {
   return (
     <div className=" w-[85%]  mx-auto mt-24 mb-64 flex flex-col gap-28 ">
-      <article className="max-w-sm mx-auto md:max-w-none grid md:grid-cols-2 gap-6 md:gap-8 lg:gap-12 xl:gap-16 items-center">
+      <article className=" mx-auto md:max-w-none grid md:grid-cols-2 gap-6 md:gap-8 lg:gap-12 xl:gap-16 items-center">
         <a
           className="relative  group flex items-start justify-start  h-full"
           href="#"
