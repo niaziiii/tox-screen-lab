@@ -47,6 +47,44 @@ const TestDetail = () => {
           </footer>
         </div>
       </article>
+      <section className=" shadow-black/15 shadow-2xl  grid  lg:grid-cols-2  p-10 rounded-xl lg:divide-x-2 divide-dark">
+        <div className="flex flex-col gap-3">
+          <div className="flex gap-2">
+            <h3 className="font-semibold text-lightBlue">Sample Type:</h3>
+            <p>Blood & Urine</p>
+          </div>
+          <div className="flex gap-2">
+            <h3 className="font-semibold text-lightBlue">Age:</h3>
+            <p>18+</p>
+          </div>
+          <div className="flex gap-2">
+            <h3 className="font-semibold text-lightBlue">HSA/FSA:</h3>
+            <p>Accepted</p>
+          </div>
+
+          <div className="flex gap-2">
+            <h3 className="font-semibold text-lightBlue">Collection Method:</h3>
+            <p>In Person at a hospital</p>
+          </div>
+          <div className="flex gap-2">
+            <h3 className="font-semibold text-lightBlue">Result:</h3>
+            <p>1 day from when your sample arrives at our lab</p>
+          </div>
+          <p>Test must be taken by purchaser</p>
+        </div>
+
+        <div className="lg:px-10 py-10 lg:py-0 ">
+          <p>
+            <span className="font-semibold  text-lightBlue">Preparation:</span>{" "}
+             Fast for 12 hours (no food or drink, except water) before sample
+            collection. If you’re taking a supplement containing biotin (also
+            called vitamin B7 or B8, vitamin H, or coenzyme R), commonly found
+            in products promoting nail, skin and hair health, it is recommended
+            that you wait at least 72 hours from your last dose before sample
+            collection.
+          </p>
+        </div>
+      </section>
 
       <section className="md:w-8/12 mx-auto flex flex-col gap-16">
         <FAQ />
