@@ -18,6 +18,9 @@
   -moz-osx-font-smoothing: grayscale;
   background-color: white;
 }
+body {
+  scroll-behavior: smooth;
+}
 
 ::-webkit-scrollbar {
   width: 6px;

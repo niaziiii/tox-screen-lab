@@ -11,8 +11,10 @@ import Stethoscope from "../assets/Stethoscope.png";
 
 export const APP_ROUTES = {
   home: "/",
-  tests: "/tests/",
   signUp: "sign-up",
+  tests: "/tests",
+  reqForInfo: "/request-information",
+  howThisWorks: "/how-this-works",
   notFound: "*",
   news: "/news/",
 };
@@ -23,7 +25,7 @@ export const navItems = [
   },
   {
     name: "How this works",
-    path: "/How-this-works",
+    path: "/how-this-works",
   },
   {
     name: "About us",
@@ -47,15 +49,15 @@ export const footerItems = {
     },
     {
       name: "Request information",
-      path: "Request-information",
+      path: "/request-information",
     },
     {
       name: "How this works",
-      path: "How-this-works",
+      path: "/how-this-works",
     },
     {
       name: "About us",
-      path: "About-us",
+      path: "/About-us",
     },
     {
       name: "News",
@@ -69,15 +71,15 @@ export const footerItems = {
   legal: [
     {
       name: "Privacy Policy",
-      path: "Privacy-Policy",
+      path: "/Privacy-Policy",
     },
     {
       name: "Copyright Information",
-      path: "Copyright-Information",
+      path: "/Copyright-Information",
     },
     {
       name: "Cookie Policy",
-      path: "Cookie-Policy",
+      path: "/Cookie-Policy",
     },
   ],
   getInTouch: [

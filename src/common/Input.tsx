@@ -5,7 +5,8 @@ interface AppInputProps {
   type: string;
   placeholder?: string;
   value?: string;
-  onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
+  onChange?: (event: any) => void;
+  className?: string;
 }
 
 const AppInput: React.FC<AppInputProps> = ({
@@ -13,8 +14,24 @@ const AppInput: React.FC<AppInputProps> = ({
   placeholder,
   value,
   title,
+  className = "",
   onChange,
 }) => {
+  if (type === "textarea") {
+    return (
+      <div className="w-full">
+        <label htmlFor={title} className="text-darkBlue text-xs ">
+          {title}
+        </label>
+        <textarea
+          value={value}
+          className={`rounded-[10px] w-full bg-lightGray text-dark px-4 py-3 outline-none border-none mt-4 ${className}`}
+          onChange={(e) => onChange?.(e)}
+          rows={4}
+        />
+      </div>
+    );
+  }
   return (
     <div className="w-full">
       <label htmlFor={title} className="text-darkBlue text-xs ">
@@ -23,7 +40,7 @@ const AppInput: React.FC<AppInputProps> = ({
       <input
         type={type}
         name={title}
-        className="rounded-[10px] w-full bg-lightGray text-dark px-4 py-3 outline-none border-none mt-4"
+        className={`rounded-[10px] w-full bg-lightGray text-dark px-4 py-3 outline-none border-none mt-4 ${className}`}
         id={title}
         placeholder={placeholder}
         value={value}
