@@ -7,6 +7,17 @@ const Apply = () => {
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
+    const [section, field] = name.split("."); // Split the name into section and field
+    if (name.includes(".")) {
+      setFormData((prevData: ApplicationModel) => ({
+        ...prevData,
+        [section]: {
+          ...prevData[section],
+          [field]: value,
+        },
+      }));
+      return;
+    }
     setFormData((prevData: ApplicationModel) => ({
       ...prevData,
       [name]: value,
@@ -78,7 +89,7 @@ const Apply = () => {
               <AppInput
                 type="text"
                 title="Degree/Certificate"
-                name="degree"
+                name="education.degree"
                 placeholder="Enter your field"
                 value={formData.education.degree}
                 onChange={handleChange}
@@ -91,7 +102,7 @@ const Apply = () => {
                 className="w-full col-span-2"
                 placeholder="Enter name of your university "
                 value={formData.education.university}
-                name="university"
+                name="education.university"
                 onChange={handleChange}
               />
             </div>
@@ -99,15 +110,92 @@ const Apply = () => {
             <AppInput
               type="date"
               title="Start Date"
-              name="startDate"
+              name="education.startDate"
               value={formData.education.startDate}
               onChange={handleChange}
             />
             <AppInput
               type="date"
               title="End Date"
-              name="endDate"
+              name="education.endDate"
               value={formData.education.endDate}
+              onChange={handleChange}
+            />
+          </div>
+        </section>
+
+        <section className="">
+          <h1 className="text-left text-dark text-2xl font-bold ">
+            Previous Job Information
+          </h1>
+          <div className=" mt-10 grid grid-cols-1 md:grid-cols-2 gap-x-[10%] gap-y-10">
+            <div className="w-full col-span-2">
+              <AppInput
+                type="text"
+                title="Position"
+                name="job.position"
+                placeholder="Enter your previous position"
+                value={formData.job.position}
+                onChange={handleChange}
+              />
+            </div>
+            <div className="w-full col-span-2">
+              <AppInput
+                type="text"
+                title="Company"
+                className="w-full col-span-2"
+                placeholder="Enter name of previous company "
+                value={formData.job.company}
+                name="job.company"
+                onChange={handleChange}
+              />
+            </div>
+
+            <AppInput
+              type="date"
+              title="Start Date"
+              name="job.startDate"
+              value={formData.job.startDate}
+              onChange={handleChange}
+            />
+            <AppInput
+              type="date"
+              title="End Date"
+              name="job.endDate"
+              value={formData.job.endDate}
+              onChange={handleChange}
+            />
+          </div>
+        </section>
+
+        <section className="">
+          <h1 className="text-left text-dark text-2xl font-bold ">
+            References
+          </h1>
+          <div className=" mt-10 grid grid-cols-1 md:grid-cols-2 gap-x-[10%] gap-y-10">
+            <div className="w-full col-span-2">
+              <AppInput
+                type="text"
+                title="Position"
+                name="reference.position"
+                placeholder="Enter your reference"
+                value={formData.reference.position}
+                onChange={handleChange}
+              />
+            </div>
+
+            <AppInput
+              type="date"
+              title="Start Date"
+              name="reference.startDate"
+              value={formData.reference.startDate}
+              onChange={handleChange}
+            />
+            <AppInput
+              type="date"
+              title="End Date"
+              name="reference.endDate"
+              value={formData.reference.endDate}
               onChange={handleChange}
             />
           </div>
