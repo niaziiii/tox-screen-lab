@@ -16,28 +16,30 @@ export const APP_ROUTES = {
   reqForInfo: "/request-information",
   howThisWorks: "/how-this-works",
   notFound: "*",
-  news: "/news/",
+  news: "/news",
+  jobs: "/jobs",
+  apply: "/apply",
 };
 export const navItems = [
   {
     name: "Test",
-    path: "/tests",
+    path: APP_ROUTES.tests,
   },
   {
     name: "How this works",
-    path: "/how-this-works",
+    path: APP_ROUTES.howThisWorks,
   },
   {
     name: "About us",
-    path: "/about-us",
+    path: APP_ROUTES.notFound,
   },
   {
     name: "News",
-    path: "/news",
+    path: APP_ROUTES.news,
   },
   {
     name: "Jobs",
-    path: "/jobs",
+    path: APP_ROUTES.jobs,
   },
 ];
 
@@ -45,7 +47,7 @@ export const footerItems = {
   menu: [
     {
       name: "Sign up for Testing",
-      path: "/sign-up",
+      path: APP_ROUTES.signUp,
     },
     {
       name: "Request information",
@@ -53,7 +55,7 @@ export const footerItems = {
     },
     {
       name: "How this works",
-      path: "/how-this-works",
+      path: APP_ROUTES.howThisWorks,
     },
     {
       name: "About us",
@@ -61,11 +63,11 @@ export const footerItems = {
     },
     {
       name: "News",
-      path: "/news",
+      path: APP_ROUTES.news,
     },
     {
       name: "Jobs",
-      path: "/jobs",
+      path: APP_ROUTES.jobs,
     },
   ],
   legal: [
@@ -103,18 +105,6 @@ export const footerItems = {
 };
 
 export const testCardsData = [
-  {
-    title: "Comprehensive Health Profile - Men's",
-    price: 349,
-    url: APP_ROUTES.tests,
-    imageSrc: TestCard,
-  },
-  {
-    title: "Comprehensive Health Profile - Men's",
-    price: 349,
-    url: APP_ROUTES.tests,
-    imageSrc: TestCard,
-  },
   {
     title: "Comprehensive Health Profile - Men's",
     price: 349,
