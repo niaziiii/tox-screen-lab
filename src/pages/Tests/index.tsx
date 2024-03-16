@@ -1,9 +1,5 @@
 import Card from "../../common/Card";
-import {
-  testCardsData,
-  inPersonTestsCardData,
-  supplyData,
-} from "../../utils/constant";
+import { testCardsData, inPersonTestsCardData, supplyData } from "./utils";
 
 export default function Tests() {
   return (

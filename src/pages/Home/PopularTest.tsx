@@ -1,7 +1,7 @@
 import AppHeading from "../../common/Heading";
 import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
-import { testCardsData } from "../../utils/constant";
 import Card from "../../common/Card";
+import { testCardsData } from "../Tests/utils";
 
 export default function PopularTest() {
   return (

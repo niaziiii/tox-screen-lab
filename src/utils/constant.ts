@@ -2,12 +2,6 @@ import { FaFacebook } from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";
 import { TfiYoutube } from "react-icons/tfi";
 import { FaLinkedin } from "react-icons/fa6";
-import TestCard from "../assets/testcard.png";
-import TestingCup from "../assets/Testing-Cup.png";
-import Gloves from "../assets/gloves.png";
-import Sphygmomanometer from "../assets/Sphygmomanometer.png";
-import TestingUniform from "../assets/Testing-uniform.png";
-import Stethoscope from "../assets/Stethoscope.png";
 
 export const APP_ROUTES = {
   home: "/",
@@ -15,11 +9,13 @@ export const APP_ROUTES = {
   tests: "/tests",
   reqForInfo: "/request-information",
   howThisWorks: "/how-this-works",
+  aboutUs: "/about-us",
   notFound: "*",
   news: "/news",
   jobs: "/jobs",
   apply: "/apply",
 };
+
 export const navItems = [
   {
     name: "Test",
@@ -31,7 +27,7 @@ export const navItems = [
   },
   {
     name: "About us",
-    path: APP_ROUTES.notFound,
+    path: APP_ROUTES.aboutUs,
   },
   {
     name: "News",
@@ -59,7 +55,7 @@ export const footerItems = {
     },
     {
       name: "About us",
-      path: "/About-us",
+      path: APP_ROUTES.aboutUs,
     },
     {
       name: "News",
@@ -103,96 +99,3 @@ export const footerItems = {
     },
   ],
 };
-
-export const testCardsData = [
-  {
-    title: "Comprehensive Health Profile - Men's",
-    price: 349,
-    url: APP_ROUTES.tests,
-    imageSrc: TestCard,
-  },
-  {
-    title: "Comprehensive Health Profile - Men's",
-    price: 349,
-    url: APP_ROUTES.tests,
-    imageSrc: TestCard,
-  },
-  {
-    title: "Comprehensive Health Profile - Men's",
-    price: 349,
-    url: APP_ROUTES.tests,
-    imageSrc: TestCard,
-  },
-  {
-    title: "Comprehensive Health Profile - Men's",
-    price: 349,
-    url: APP_ROUTES.tests,
-    imageSrc: TestCard,
-  },
-  {
-    title: "Comprehensive Health Profile - Men's",
-    price: 349,
-    url: APP_ROUTES.tests,
-    imageSrc: TestCard,
-  },
-  {
-    title: "Comprehensive Health Profile - Men's",
-    price: 349,
-    url: APP_ROUTES.tests,
-    imageSrc: TestCard,
-  },
-  {
-    title: "Comprehensive Health Profile - Men's",
-    price: 349,
-    url: APP_ROUTES.tests,
-    imageSrc: TestCard,
-  },
-];
-
-export const inPersonTestsCardData = [
-  {
-    title: "Comprehensive Health Profile - Men's",
-    price: 349,
-    url: APP_ROUTES.tests,
-    imageSrc: TestCard,
-  },
-  {
-    title: "Comprehensive Health Profile - Men's",
-    price: 349,
-    url: APP_ROUTES.tests,
-    imageSrc: TestCard,
-  },
-];
-
-export const supplyData = [
-  {
-    title: "Testing cups",
-    price: 49.0,
-    url: "#",
-    imageSrc: TestingCup,
-  },
-  {
-    title: "Medical Gloves",
-    price: 49.0,
-    url: "#",
-    imageSrc: Gloves,
-  },
-  {
-    title: "Testing Uniforms",
-    price: 49.0,
-    url: "#",
-    imageSrc: TestingUniform,
-  },
-  {
-    title: "Sphygmomanometer",
-    price: 49.0,
-    url: "#",
-    imageSrc: Sphygmomanometer,
-  },
-  {
-    title: "Stethoscope, fontal, Pinard",
-    price: 49.0,
-    url: "#",
-    imageSrc: Stethoscope,
-  },
-];
