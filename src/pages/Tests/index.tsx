@@ -1,3 +1,4 @@
+import uniqid from "uniqid";
 import Card from "../../common/Card";
 import { testCardsData, inPersonTestsCardData, supplyData } from "./utils";
 
@@ -13,7 +14,7 @@ export default function Tests() {
               key={index}
               title={card.title}
               price={card.price}
-              url={`${card.url}1`}
+              url={`${card.url}/${uniqid()}`}
             />
           ))}
         </div>
