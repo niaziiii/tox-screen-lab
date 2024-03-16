@@ -17,6 +17,7 @@ import {
 import RequestInfo from "./pages/RequestInfo";
 import HowThisWorks from "./pages/HowThisWorks";
 import AboutUs from "./pages/AboutUs";
+import Job from "./pages/Job/Index";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -29,6 +30,7 @@ const router = createBrowserRouter(
       <Route path={`${APP_ROUTES.news}:id`} element={<NewsArticle />} />
       <Route path={`${APP_ROUTES.howThisWorks}`} element={<HowThisWorks />} />
       <Route path={`${APP_ROUTES.aboutUs}`} element={<AboutUs />} />
+      <Route path={`${APP_ROUTES.job}`} element={<Job />} />
       <Route path={APP_ROUTES.notFound} element={<NotFound />} />
     </Route>
   )

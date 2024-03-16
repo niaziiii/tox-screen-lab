@@ -10,30 +10,31 @@ export const APP_ROUTES = {
   reqForInfo: "/request-information",
   howThisWorks: "/how-this-works",
   aboutUs: "/about-us",
-  news: "/news/",
+  news: "/news",
+  job: "/jobs",
   notFound: "*",
 };
 
 export const navItems = [
   {
     name: "Test",
-    path: "/tests",
+    path: APP_ROUTES.tests,
   },
   {
     name: "How this works",
-    path: "/how-this-works",
+    path: APP_ROUTES.howThisWorks,
   },
   {
     name: "About us",
-    path: "/about-us",
+    path: APP_ROUTES.aboutUs,
   },
   {
     name: "News",
-    path: "/news",
+    path: APP_ROUTES.news,
   },
   {
     name: "Jobs",
-    path: "/jobs",
+    path: APP_ROUTES.job,
   },
 ];
 
@@ -49,19 +50,19 @@ export const footerItems = {
     },
     {
       name: "How this works",
-      path: "/how-this-works",
+      path: APP_ROUTES.howThisWorks,
     },
     {
       name: "About us",
-      path: "/about-us",
+      path: APP_ROUTES.aboutUs,
     },
     {
       name: "News",
-      path: "/news",
+      path: APP_ROUTES.news,
     },
     {
       name: "Jobs",
-      path: "/jobs",
+      path: APP_ROUTES.job,
     },
   ],
   legal: [
