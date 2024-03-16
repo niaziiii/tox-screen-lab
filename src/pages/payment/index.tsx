@@ -3,6 +3,10 @@ import { useState } from "react";
 import Visa from "../../assets/Visa.png";
 import Mastercard from "../../assets/Mastercard.png";
 import AppInput from "../../common/Input";
+import { loadStripe } from "@stripe/stripe-js";
+const stripePromise = loadStripe(
+  "pk_test_51LBlukFVKMeZqL9weRL4gFWpOVcKlpYpHiisMaDl7DBmHY3eztOhmTYyyRwRJOnISukRzAjnGBAbWL3x8BPisN8O00z1waoXNY"
+);
 
 const Payment = () => {
   const [value, setValue] = useState<string>(Visa);
@@ -39,6 +43,21 @@ const Payment = () => {
         <img className="w-20 h-16 object-contain" src={option} alt="news" />
       </div>
     );
+  };
+
+  const handleClick = async () => {
+    const stripe = await stripePromise;
+    await stripe?.redirectToCheckout({
+      lineItems: [
+        {
+          price: "price_1Ov3mSFVKMeZqL9wZfXlnzyv",
+          quantity: 1,
+        },
+      ],
+      mode: "payment",
+      successUrl: "https://tox-screen-lab.vercel.app/",
+      cancelUrl: "https://tox-screen-lab.vercel.app/payment",
+    });
   };
   return (
     <div className="max-w-[85%]  mx-auto mt-24 mb-40 flex flex-col gap-20 ">
@@ -99,6 +118,13 @@ const Payment = () => {
           className=" bg-darkBlue px-24 py-3 rounded-xl !text-white  mx-auto hover:bg-darkBlue/75 mt-10 "
         >
           Pay Now
+        </button>
+        <button
+          onClick={handleClick}
+          type="submit"
+          className=" bg-lightBlue px-24 py-3 rounded-xl !text-white  mx-auto hover:bg-lightBlue/75 mt-0 "
+        >
+          Pay with stripe
         </button>
       </form>
     </div>

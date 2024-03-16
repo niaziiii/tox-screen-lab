@@ -1,6 +1,7 @@
 import { Button } from "primereact/button";
 import TestDetailImage from "../../assets/testcard.png";
 import FAQ from "../../common/FAQ";
+import { Link } from "react-router-dom";
 const TestDetail = () => {
   return (
     <div className=" w-[85%]  mx-auto mt-24 mb-64 flex flex-col gap-28 ">
@@ -39,11 +40,13 @@ const TestDetail = () => {
           </div>
 
           <footer className="flex mt-4">
-            <Button
-              label="Purchase"
-              className=" bg-lightBlue text-white px-20 py-4 text-lg rounded-lg hover:bg-darkBlue duration-300 ease-in transition-all"
-              size="large"
-            />
+            <Link to={"/payment"}>
+              <Button
+                label="Purchase"
+                className=" bg-lightBlue text-white px-20 py-4 text-lg rounded-lg hover:bg-darkBlue duration-300 ease-in transition-all"
+                size="large"
+              />
+            </Link>
           </footer>
         </div>
       </article>
