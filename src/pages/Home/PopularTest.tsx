@@ -2,6 +2,7 @@ import AppHeading from "../../common/Heading";
 import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
 import Card from "../../common/Card";
 import { testCardsData } from "../Tests/utils";
+import uniqid from "uniqid";
 
 export default function PopularTest() {
   return (
@@ -27,7 +28,7 @@ export default function PopularTest() {
                   key={index}
                   title={card.title}
                   price={card.price}
-                  url={`${card.url}1`}
+                  url={`${card.url}/${uniqid()}`}
                 />
               ))}
             </div>

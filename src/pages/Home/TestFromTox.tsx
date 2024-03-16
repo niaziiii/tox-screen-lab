@@ -4,6 +4,7 @@ import { carouselItems, responsiveOptions } from "./utils";
 import AppButton from "../../common/Button";
 import { classNames } from "primereact/utils";
 import AppHeading from "../../common/Heading";
+import uniqid from "uniqid";
 
 interface IItems {
   title: string;
@@ -53,6 +54,8 @@ const ItemTemplate = (item: IItems) => {
             title="Learn more"
             className="bg-transparent !text-lightBlue  hover:bg-transparent hover:!text-lightBlue/70 w-[140px]"
             style={{ border: "1px solid #41BFDD" }}
+            link
+            path={`/tests/${uniqid()}`}
           />
         </div>
       </div>
