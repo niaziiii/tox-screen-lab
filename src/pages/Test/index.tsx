@@ -49,24 +49,24 @@ const TestDetail = () => {
       </article>
       <section className=" shadow-black/15 shadow-2xl  grid  lg:grid-cols-2  p-10 rounded-xl lg:divide-x-2 divide-dark">
         <div className="flex flex-col gap-3">
-          <div className="flex gap-2">
+          <div className="flex flex-col sm:flex-row sm:gap-2">
             <h3 className="font-semibold text-lightBlue">Sample Type:</h3>
             <p>Blood & Urine</p>
           </div>
-          <div className="flex gap-2">
+          <div className="flex flex-col sm:flex-row sm:gap-2">
             <h3 className="font-semibold text-lightBlue">Age:</h3>
             <p>18+</p>
           </div>
-          <div className="flex gap-2">
+          <div className="flex flex-col sm:flex-row sm:gap-2">
             <h3 className="font-semibold text-lightBlue">HSA/FSA:</h3>
             <p>Accepted</p>
           </div>
 
-          <div className="flex gap-2">
+          <div className="flex flex-col sm:flex-row sm:gap-2">
             <h3 className="font-semibold text-lightBlue">Collection Method:</h3>
             <p>In Person at a hospital</p>
           </div>
-          <div className="flex gap-2">
+          <div className="flex flex-col sm:flex-row sm:gap-2">
             <h3 className="font-semibold text-lightBlue">Result:</h3>
             <p>1 day from when your sample arrives at our lab</p>
           </div>

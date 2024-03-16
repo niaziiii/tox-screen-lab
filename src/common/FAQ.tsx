@@ -1,10 +1,5 @@
 import { Accordion, AccordionTab } from "primereact/accordion";
 
-// interface AccordionProps {
-//   header: string;
-//   content: string;
-// }
-
 const FAQ = () => {
   return (
     <>
@@ -13,10 +8,10 @@ const FAQ = () => {
         <AccordionTab
           pt={{
             headerIcon: {
-              className: " absolute right-0 h-6 w-6 text-darkBlue",
+              className: " absolute right-0 sm:h-6 sm:w-6 text-darkBlue",
             },
             header: {
-              className: "h-16  text-darkBlue text-xl font-medium",
+              className: "h-10  text-darkBlue sm:text-xl font-medium",
             },
           }}
           header="What screenings should men get?"
@@ -31,10 +26,10 @@ const FAQ = () => {
         <AccordionTab
           pt={{
             headerIcon: {
-              className: " absolute right-0 h-6 w-6 text-darkBlue",
+              className: " absolute right-0 sm:h-6 sm:w-6 text-darkBlue",
             },
             header: {
-              className: "h-fit text-darkBlue text-xl font-medium",
+              className: "h-fit text-darkBlue sm:text-xl font-medium",
             },
           }}
           header="How accurate is this testing?"
@@ -49,10 +44,10 @@ const FAQ = () => {
         <AccordionTab
           pt={{
             headerIcon: {
-              className: " absolute right-0 h-6 w-6 text-darkBlue",
+              className: " absolute right-0 sm:h-6 sm:w-6 text-darkBlue",
             },
             header: {
-              className: "h-10  text-darkBlue text-xl font-medium",
+              className: "h-10  text-darkBlue sm:text-xl font-medium",
             },
           }}
           header="Are my test results private and confidential?"
@@ -67,10 +62,10 @@ const FAQ = () => {
         <AccordionTab
           pt={{
             headerIcon: {
-              className: " absolute right-0 h-6 w-6 text-darkBlue",
+              className: " absolute right-0 sm:h-6 sm:w-6 text-darkBlue",
             },
             header: {
-              className: "h-10  text-darkBlue text-xl font-medium",
+              className: "h-10  text-darkBlue sm:text-xl font-medium",
             },
           }}
           header="How does TOX-SCREEN LAB work?"
