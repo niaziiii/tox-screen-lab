@@ -14,6 +14,7 @@ export const APP_ROUTES = {
   news: "/news",
   jobs: "/jobs",
   apply: "/apply",
+  payment: "/payment",
 };
 
 export const navItems = [
