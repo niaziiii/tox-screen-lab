@@ -19,7 +19,6 @@ import HowThisWorks from "./pages/HowThisWorks";
 import Jobs from "./pages/Jobs";
 import Apply from "./pages/apply";
 import AboutUs from "./pages/AboutUs";
-import Job from "./pages/Job/Index";
 import News from "./pages/News";
 
 const router = createBrowserRouter(
@@ -36,7 +35,6 @@ const router = createBrowserRouter(
       <Route path={`${APP_ROUTES.jobs}`} element={<Jobs />} />
       <Route path={`${APP_ROUTES.apply}`} element={<Apply />} />
       <Route path={`${APP_ROUTES.aboutUs}`} element={<AboutUs />} />
-      {/* <Route path={`${APP_ROUTES.job}`} element={<Job />} /> */}
       <Route path={APP_ROUTES.notFound} element={<NotFound />} />
     </Route>
   )
