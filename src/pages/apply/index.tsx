@@ -7,12 +7,13 @@ const Apply = () => {
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
-    const [section, field] = name.split("."); // Split the name into section and field
+    const [section, field] = name.split(".");
+    type ApplicationKeys = keyof ApplicationModel; // Split the name into section and field
     if (name.includes(".")) {
       setFormData((prevData: ApplicationModel) => ({
         ...prevData,
-        [section]: {
-          ...prevData[section],
+        [section as ApplicationKeys]: {
+          ...(prevData[section as ApplicationKeys] as any),
           [field]: value,
         },
       }));
