@@ -1,4 +1,5 @@
 import AppButton from "./Button";
+import uniqid from "uniqid";
 
 export default function NewsCard({
   title,
@@ -20,6 +21,8 @@ export default function NewsCard({
             title="Learn more"
             className="bg-transparent !text-lightBlue  hover:bg-transparent hover:!text-lightBlue/70 w-[140px]"
             style={{ border: "1px solid #41BFDD", borderRadius: "15px" }}
+            link
+            path={`/news/${uniqid()}`}
           />
         </div>
       </div>

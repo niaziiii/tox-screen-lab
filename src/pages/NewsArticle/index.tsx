@@ -1,6 +1,6 @@
 import NewCard from "../../common/NewsCard";
 import uniqid from "uniqid";
-import { newsData } from "../Home/utils";
+import { newsData } from "../News/utils";
 
 const NewsArticle = () => {
   return (
@@ -8,7 +8,7 @@ const NewsArticle = () => {
       <div className="lg:flex  space-x-0 lg:space-x-10 mb-0">
         <div className="mb-4 lg:mb-0   lg:p-0 w-full lg:w-8/12 relative rounded block">
           <img
-            src="/public/news/image-5.png"
+            src="/news/image-5.png"
             className="rounded-2xl object-cover w-full h-96"
           />
 

@@ -18,6 +18,7 @@ import RequestInfo from "./pages/RequestInfo";
 import HowThisWorks from "./pages/HowThisWorks";
 import AboutUs from "./pages/AboutUs";
 import Job from "./pages/Job/Index";
+import News from "./pages/News";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -27,7 +28,8 @@ const router = createBrowserRouter(
       <Route path={`${APP_ROUTES.tests}/:id`} element={<TestDetail />} />
       <Route path={`${APP_ROUTES.signUp}`} element={<Signup />} />
       <Route path={`${APP_ROUTES.reqForInfo}`} element={<RequestInfo />} />
-      <Route path={`${APP_ROUTES.news}:id`} element={<NewsArticle />} />
+      <Route path={`${APP_ROUTES.news}`} element={<News />} />
+      <Route path={`${APP_ROUTES.news}/:id`} element={<NewsArticle />} />
       <Route path={`${APP_ROUTES.howThisWorks}`} element={<HowThisWorks />} />
       <Route path={`${APP_ROUTES.aboutUs}`} element={<AboutUs />} />
       <Route path={`${APP_ROUTES.job}`} element={<Job />} />
