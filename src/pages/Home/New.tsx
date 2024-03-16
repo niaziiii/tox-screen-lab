@@ -1,7 +1,7 @@
 import uniqid from "uniqid";
 import AppHeading from "../../common/Heading";
 import NewsCard from "../../common/NewsCard";
-import { newsData } from "./utils";
+import { newsData } from "../News/utils";
 
 function News() {
   return (
